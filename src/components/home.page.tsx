@@ -1,5 +1,5 @@
 import React from 'react'
 
-export const FirstComponent = () => {
+export const HomePage = () => {
     return <div>First component</div>
 }

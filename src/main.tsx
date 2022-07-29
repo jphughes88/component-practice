@@ -1,13 +1,13 @@
 import React from 'react'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 
-import { FirstComponent } from './components/FirstComponent'
+import { HomePage } from './components/home.page'
 
 export const Main = () => {
     return (
         <Router>
             <Routes>
-                <Route path="/first" element={<FirstComponent />} />
+                <Route path="/" element={<HomePage />} />
             </Routes>
         </Router>
     )
