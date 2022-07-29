@@ -1,0 +1,61 @@
+{
+  "globals": {
+    "it": true,
+    "document": true
+  },
+  "plugins": [
+    "react",
+    "import",
+    "prettier"
+  ],
+  "extends": [
+    "react-app",
+    "plugin:react/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "17.0.2"
+    }
+  },
+  "rules": {
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "react*",
+            "group": "external",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": [
+          "react*"
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": false
+        },
+        "newlines-between": "always",
+        "warnOnUnassignedImports": false
+      }
+    ],
+    "import/no-webpack-loader-syntax": "off",
+    "react/prop-types": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": false,
+        "singleQuote": true,
+        "tabWidth": 4,
+        "printWidth": 120,
+        "trailingComma": "none",
+        "arrowParens": "avoid"
+      }
+    ]
+  }
+}
