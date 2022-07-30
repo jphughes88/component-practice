@@ -4,8 +4,8 @@ import { RetailHeaderLinks } from './retail-header-links'
 
 export const Header = () => {
     return (
-        <span>
+        <div>
             <RetailHeaderLinks />
-        </span>
+        </div>
     )
 }
