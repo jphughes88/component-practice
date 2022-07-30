@@ -8,12 +8,14 @@
     "import",
     "prettier",
     "testing-library",
-    "jest-dom"
+    "jest-dom",
+    "styled-components-a11y"
   ],
   "extends": [
     "react-app",
     "plugin:react/recommended",
-    "plugin:jest-dom/recommended"
+    "plugin:jest-dom/recommended",
+    "plugin:styled-components-a11y/strict"
   ],
   "settings": {
     "react": {
