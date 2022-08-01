@@ -8,22 +8,24 @@ export const HeaderSection = styled.section({
 })
 
 export const RetailHeaderLinksOuter = styled.div({
+    display: 'flex',
+    flexDirection: 'row',
     position: 'absolute',
-    top: '50%',
-    margin: 0,
-    padding: '0px 0px 0px 10px',
-    transform: 'translateY(-50%)'
+    width: '100%',
+    padding: '0px 30px 0px 30px',
+    height: '85px',
+    justifyContent: 'space-between'
 })
 
 export const RetailHeaderLinksInner = styled.div({
-    display: 'inline',
-    textAlign: 'left',
-    'font-family': 'Roboto',
-    'font-size': '14px',
-    'a:link': { 'text-decoration': 'none', color: 'black' },
-    a: {
-        padding: '0px 15px 0px 15px'
-    },
+    display: 'flex',
+    fontFamily: 'Roboto',
+    width: '25%',
+    fontSize: '14px',
+    height: '85px',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    'a:link': { textDecoration: 'none', color: 'black' },
     'a:visited': {
         color: 'black'
     }

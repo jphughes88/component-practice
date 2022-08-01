@@ -10,4 +10,10 @@ describe('header', () => {
 
         expect(getByTestId('retail-header-links'))
     })
+
+    test('renders logo', () => {
+        const { getByAltText } = render(<Header />)
+
+        expect(getByAltText('bun stuff logo'))
+    })
 })
