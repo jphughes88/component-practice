@@ -16,4 +16,10 @@ describe('header', () => {
 
         expect(getByAltText('bun stuff logo'))
     })
+
+    test('renders AccountLinks', () => {
+        const { getByTestId } = render(<Header />)
+
+        expect(getByTestId('account-links'))
+    })
 })
