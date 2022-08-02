@@ -27,3 +27,13 @@ export const HeaderLinksInner = styled.div({
         color: 'black'
     }
 })
+
+export const HeaderBanner = styled.div({
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '40px',
+    backgroundColor: '#F2F2EE',
+    animation: 'ticker-kf 1s ease-in-out 1',
+    animationFillMode: 'forwards'
+})
